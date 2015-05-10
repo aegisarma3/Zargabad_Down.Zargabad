@@ -8,7 +8,7 @@ waitUntil { isServer || !isNull player };
 #define execNow call compile preprocessfilelinenumbers
 #endif
 
-//execVM "Intro.sqf";
+execVM "Intro.sqf";
 
 // Desabilita o lixo do thermal image
 0 = [] spawn {
