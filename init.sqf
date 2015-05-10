@@ -1,40 +1,37 @@
+#include "Zen_FrameworkFunctions\Zen_InitHeader.sqf"
+
+// <Your mission name here> by <your name here>
+// Version = <the date here>
+// Tested with ArmA 3 <version number>
+
+// // This will fade in from black, to hide jarring actions at mission start, this is optional and you can change the value
+// titleText ["Good Luck", "BLACK FADED", 0.2];
+// // SQF functions cannot continue running after loading a saved game, do not delete this line
+// enableSaving [false, false];
+// // All clients stop executing here, do not delete this line
+// if (!isServer) exitWith {};
+// // Execution stops until the mission begins (past briefing), do not delete this line
+// sleep 1;
+
+// // Enter the mission code here
+
+
+
+
+
+
 waitUntil { isServer || !isNull player };
 
-#include "core\modules\gridMarkers\functions\functions.sqf"
-#include "core\modules\cacheScript\functions\cacheFunctions.sqf"
-#include "core\modules\cacheScript\functions\cacheGetPositions.sqf"
+enableSaving [false, false];
 
-#ifndef execNow
-#define execNow call compile preprocessfilelinenumbers
-#endif
 
 execVM "Intro.sqf";
 
-// Desabilita o lixo do thermal image
-0 = [] spawn {
-
-    _layer = 85125; 
-    while {true} do 
-    { 
-        if (currentVisionMode player == 2) then
-            { 
-                //hint "Porcaria de thermal";
-                _layer  cutText ["ERR 0921F - No battery or insufficient memory","BLACK",-3];
-                waituntil {currentVisionMode player != 2};
-                _layer cutText ["", "PLAIN"];
-            };
-            sleep 0.5; 
-    };
-};
+[3, 500, 1200] execVM "MAD_traffic.sqf";
 
 
-execNow "init-custom.sqf";
-execNow "core\init.sqf";
-execNow "support\init.sqf";
-execNow "enemy\init.sqf";
 
 
-enableSaving [false, false];
 
 //NUKE codigo
 CODEINPUT = [];
