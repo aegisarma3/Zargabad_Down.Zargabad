@@ -1,0 +1,143 @@
+Author 			  = "Collumbus & Toaster - AEGIS";
+OnLoadName        = "Zargabad Down";
+OnLoadMission     = "Não é preciso ter olhos abertos para ver o sol, nem é preciso ter ouvidos afiados para ouvir o trovão. Para ser vitorioso você precisa ver o que não está visível. - Sun Tzu";
+loadScreen = "signs\MAIN.jpg";
+overviewPicture = "signs\MAIN.jpg";
+enableDebugConsole = 1;
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 15;
+};
+
+#include "DEFUSE\common.hpp"
+#include "DEFUSE\explosivePad.hpp"
+//#include "taw_vd\dialog.hpp"
+
+class CfgSounds
+{
+
+class allah
+{
+// Name for mission editor
+name = "allah";
+//Path of the .ogg file. since it's in the same folder just use the filename
+sound[] = {\sounds\allah.ogg, 1, 1.0};
+titles[] = {};
+};
+
+	sounds[] = {};
+	#include "DEFUSE\sounds\cfgSounds.hpp"
+
+
+class alarme1
+{
+// Name for mission editor
+name = "alarme1"; 
+//Path of the .ogg file. since it's in the same folder just use the filename
+sound[] = {\sounds\alarme1.ogg, 1, 1.0}; 
+titles[] = {};
+}	
+
+};
+
+
+
+class RscTitles {
+
+};
+class CfgFunctions {
+	#include "EPD\EPDcfgFunctions.hpp"
+	#include "functions\cfgFunctions.hpp"
+	#include "DEFUSE\functions\cfgFunctions.hpp"
+	//#include "taw_vd\CfgFunctions.hpp"
+
+	/*class Dictionary {
+        class Dictionary {
+			file = "EPD\SanjosFunctions\dictionary";
+            class new { description = "Returns a new empty dictionary. \nExample: _myDictionary = call Dictionary_fnc_new;"; };
+            class get { description = "Returns the value of the key or objNull if the key doesn't exist. \nExample: [_myDictionary, _myKey] call Dictionary_fnc_get;"; };
+            class set { description = "Sets the key to a new value. Overwrites the previous value if the key already existed. \nExample: [_myDictionary, _myNewKey, _myNewValue] call Dictionary_fnc_set;"; };
+            class remove { description = "Removes a key from the dictionary. \nExample: _oldValue = [_myDictionary, _keyToRemove] call Dictionary_fnc_remove;"; };
+            class isEmpty { description = "Returns true if the dictionary is empty. \nExample: _isDictionaryEmpty = _myDictionary call Dictionary_fnc_isEmpty;"; };
+            class containsKey { description = "Returns true if the dictionary contains the key. \nExample: _dictionaryContainsKey = [_myDictionary, _myKey] call Dictionary_fnc_containsKey;"; };
+            class containsValue { description = "Returns true if the dictionary contains the value. \nExample: _dictionaryContainsValue = [_myDictionary, _myValue] call Dictionary_fnc_containsValue;"; };
+            class size { description = "Returns the number of elements in the dictionary. \nExample: _count = _myDictionary call Dictionary_fnc_size;"; };
+            class keys { description = "Returns the keys as an array. \nExample: _keys = _myDictionary call Dictionary_fnc_keys;"; };
+            class values { description = "Returns the values as an array. \nExample: _values = _myDictionary call Dictionary_fnc_values;"; };
+        };
+    };*/
+};
+
+class Params {
+
+	class EmtpyLine1 {
+	//paramsArray[0]
+		title = ":: Game Settings";
+		values[]={0,0};
+		texts[]={ "",""};
+		default = 0;
+	};
+
+    class cachesLimit {
+	//paramsArray[1]
+		title = "Number of caches to hunt";
+		values[] = {2,4,6,8,10,12,14,16};
+		texts[] = {"Two","Four","Six","Eight","Ten","Twelve","Fourteen","Sixteen"};
+		default = 6;
+	};
+
+	class intelItems {
+	//paramsArray[2]
+		title = "Number of Intel Items to spawn per town";
+		values[] = {1,2,3,4,5,6,7,8};
+		texts[] = {"1 - Extreme","2 - Very Hard","3 - Hard","4 - Hard\Medium","5 - Medium","6 - Medium/Easy","7 - Easy","8 - Very Easy"};
+		default = 5;
+	};
+
+};
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// NUKE RELATED STUFF
+/////////////////////////////////////////////////////////////////////////////////////////
+class CfgMusic
+{
+	tracks[]={intro_bts};
+
+	class nuke
+	{
+		name = "";
+		sound[] = {"nuke\nuke.ogg", db+10, 1.0};
+	};
+		class intro_bts
+	{
+		name = "intro_bts";
+		sound[] = {\music\intro.ogg, db+2, 1.0};
+    };
+};
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Missão Finalizada";
+		subtitle = "";
+		description = "";
+		pictureBackground = "signs/logo.paa";
+		picture = "b_inf";
+	};
+	class Loser
+	{
+        title = "Missão Fracassada";
+		subtitle = "Fracasso";
+        description = "O Protótipo NUKE destruiu toda a cidade.";
+	};
+};
+
