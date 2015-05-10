@@ -57,7 +57,7 @@ mdh_nuke_colorcorrection    = 1;    // COLLORCORRECTION AFTER NUKEDETONATION 1=O
 
 //Mission Task
 if (isServer) then {
-    [ units defuseGrp, "Task_Defuse", ["Encontrar e desarmar a o protótipo NUKE. ", "Neutralizar o protótipo NUKE.", "DEFUSE"],  TRUE ] call BIS_fnc_taskCreate;
+    [ west, "Task_Defuse", ["Encontrar e desarmar a o protótipo NUKE. ", "Neutralizar o protótipo NUKE.", "DEFUSE"],  objNull, true ] call BIS_fnc_taskCreate;
 };
 
 
