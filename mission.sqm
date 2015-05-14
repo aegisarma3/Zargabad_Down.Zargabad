@@ -5237,7 +5237,7 @@ class Mission
 		};
 		class Item18
 		{
-			position[]={4830.0703,37.740139,4607.0762};
+			position[]={4830.1738,37.738209,4607.0654};
 			name="VIP";
 			markerType="RECTANGLE";
 			type="Empty";

@@ -63,7 +63,9 @@ switch (toLower _objType) do {
     };
     case "pow": {
         _objects = [_objPos, _side] call Zen_SpawnPOW;
-        0 = [([_objPos, 5, random 360] call Zen_ExtendPosition)] call Zen_SpawnCamp;
+        
+        // Remove acampamento do POW
+        //0 = [([_objPos, 5, random 360] call Zen_ExtendPosition)] call Zen_SpawnCamp;
     };
     case "convoy": {
         _convoyStart = _extraVars1;

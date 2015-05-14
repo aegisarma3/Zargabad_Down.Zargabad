@@ -33,9 +33,17 @@ enableSaving [false, false];
 // MISSÃO AEGIS
 
 _ObjectivePos = "VIP";
-_ObjectivePos setPosATL (_ObjectivePos modelToWorld[0,0,4.2]);
+
+// Deixa o marker transparente
+_ObjectivePos setMarkerAlpha 0;
+
 _yourObjective = [_ObjectivePos, (group p1), resistance, "POW", "rescue"] call Zen_CreateObjective;
 
+// Seleciona o retorno do método como array e pega o valor do civil
+_pow = (_yourObjective select 0) select 0;
+
+// Posiciona o VIP na altura correta
+_pow setPosATL (_pow modelToWorld[0,0,4.2]);
 
 
 //NUKE codigo

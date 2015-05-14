@@ -38,7 +38,9 @@ if (_powClass == "") exitWith {
 _obj = leader ([_spawnPos, _powClass] call Zen_SpawnGroup);
 
 0 = [_obj, "Crew"] call Zen_SetAISkill;
-0 = [_obj, _side, "helicopter pilot"] call Zen_GiveLoadout;
+
+// Dá um loadout PILOTO pro vip. Desabilitado.
+//0 = [_obj, _side, "helicopter pilot"] call Zen_GiveLoadout;
 
 _obj setCaptive true;
 _obj disableAI "move";
