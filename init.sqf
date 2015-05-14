@@ -25,11 +25,16 @@ waitUntil { isServer || !isNull player };
 enableSaving [false, false];
 
 
-execVM "Intro.sqf";
+//execVM "Intro.sqf";
 
 [3, 500, 1200] execVM "MAD_traffic.sqf";
 
 
+// MISSÃO AEGIS
+
+_ObjectivePos = "VIP";
+_ObjectivePos setPosATL (_ObjectivePos modelToWorld[0,0,4.2]);
+_yourObjective = [_ObjectivePos, (group p1), resistance, "POW", "rescue"] call Zen_CreateObjective;
 
 
 
@@ -55,7 +60,7 @@ mdh_nuke_colorcorrection    = 1;    // COLLORCORRECTION AFTER NUKEDETONATION 1=O
 
 
 
-//Mission Task
+//MISSÃO NATO
 if (isServer) then {
     [ west, "Task_Defuse", ["Encontrar e desarmar a o protótipo NUKE. ", "Neutralizar o protótipo NUKE.", "DEFUSE"],  objNull, true ] call BIS_fnc_taskCreate;
 };
@@ -76,5 +81,3 @@ if (isServer) then {
 };
 
 diag_log format["Initialisation Completed"];
-
-

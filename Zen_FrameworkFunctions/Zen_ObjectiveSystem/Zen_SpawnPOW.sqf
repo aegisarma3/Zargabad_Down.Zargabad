@@ -15,13 +15,13 @@ _side = _this select 1;
 
 switch (_side) do {
     case west: {
-        _powClass = "b_helipilot_F";
+        _powClass = "PMC_VIP_F";
     };
     case east: {
-        _powClass = "o_helipilot_F";
+        _powClass = "PMC_VIP_F";
     };
     case resistance: {
-        _powClass = "i_helipilot_F";
+        _powClass = "PMC_VIP_F";
     };
     default {
         0 = ["Zen_SpawnPOW", "Invalid side given", _this] call Zen_PrintError;
