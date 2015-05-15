@@ -54,8 +54,8 @@ switch (toLower _objType) do {
         _txt2 = format ["%1 the Officer", ([_triggerType] call Zen_StringCapitalizeLetter)];
     };
     case "pow":{
-        _txt1 = format ["The %1 POW is near the marked point on the map, you must %2 him.", _sideString, toLower _triggerType];
-        _txt2 = format ["%1 the POW", ([_triggerType] call Zen_StringCapitalizeLetter)];
+        _txt1 = format ["Segundo um informante o VIP foi visto pela última vez sendo levado para mesquita. O VIP deve ser resgatado antes que as forças da OTAN entrem na cidade.", _sideString, toLower _triggerType];
+        _txt2 = format ["Contrato V12G1S2: Resgate de VIP", ([_triggerType] call Zen_StringCapitalizeLetter)];
     };
     case "convoy": {
         _txt1 = format ["The %1 are moving troops and supplies in a convoy.  %2 all of the vehicles.", _sideString, ([_triggerType] call Zen_StringCapitalizeLetter)];

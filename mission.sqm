@@ -42,7 +42,6 @@ class Mission
 		"a3_static_f_mortar_01",
 		"aia_zargabad_config",
 		"pg_services_pmc_units",
-		"PG_Services_PMC_CLIENT",
 		"PG_Services_PMC_Ammoboxes",
 		"A3_Modules_F_Curator_Curator",
 		"A3_Data_F_Curator_Virtual",
@@ -5248,7 +5247,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			position[]={4055.3152,17.787327,3346.0957};
@@ -5397,6 +5396,24 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expActiv="null = execVM ""scripst/stext2.sqf""";
+			class Effects
+			{
+			};
+		};
+		class Item10
+		{
+			position[]={4240.8716,17,4158.1548};
+			a=15;
+			b=15;
+			angle=179.57201;
+			rectangular=1;
+			activationBy="GUER";
+			timeoutMin=60;
+			timeoutMid=60;
+			timeoutMax=60;
+			age="UNKNOWN";
+			expCond="true";
+			expActiv="PAPABEAR = [Resistance,""HQ""]; PAPABEAR sideChat ""O VIP foi visto sendo levado para La Villa. AZT: 048e045n "";";
 			class Effects
 			{
 			};
