@@ -82,6 +82,12 @@ class CfgMusic
 		name = "";
 		sound[] = {"nuke\nuke.ogg", db+10, 1.0};
 	};
+
+	    class arab
+    {
+        name = "";
+        sound[] = {"\sounds\arab.ogg", db+0, 1.0};
+    };
 };
 
 

@@ -4,7 +4,7 @@ if (hasInterface) then {
     waituntil {!(isnull player)};
 
 
-   // playMusic "BigJack";
+    playMusic "arab";
 
      _object = player;
     _camx = getposATL player select 0;
@@ -32,7 +32,7 @@ if (hasInterface) then {
     CamDestroy _cam;
      waitUntil{!(isNil "BIS_fnc_init")};
 
-     [str ("INTEL"), str(date select 1) + "." + str(date select 2) + "." + str(date select 0), str("Sul de Zargabad")] call BIS_fnc_infoText;
+     [str ("INTEL"), str(date select 1) + "." + str(date select 2) + "." + str(date select 0), str("Zargabad")] call BIS_fnc_infoText;
 
     sleep 5;
 
