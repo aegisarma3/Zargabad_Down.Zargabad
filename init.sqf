@@ -25,7 +25,7 @@ waitUntil { isServer || !isNull player };
 enableSaving [false, false];
 
 
-//execVM "Intro.sqf";
+execVM "Intro.sqf";
 
 [3, 500, 1200] execVM "MAD_traffic.sqf";
 
@@ -37,7 +37,7 @@ _ObjectivePos = "VIP";
 // Deixa o marker transparente
 _ObjectivePos setMarkerAlpha 0;
 
-_yourObjective = [_ObjectivePos, (group p1), resistance, "POW", "rescue"] call Zen_CreateObjective;
+_yourObjective = [_ObjectivePos, (group p_1), BLUFOR, "POW", "rescue"] call Zen_CreateObjective;
 
 // Seleciona o retorno do método como array e pega o valor do civil
 _pow = (_yourObjective select 0) select 0;

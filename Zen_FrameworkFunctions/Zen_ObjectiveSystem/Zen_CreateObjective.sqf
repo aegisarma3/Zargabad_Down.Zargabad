@@ -39,10 +39,10 @@ if (count _this > 6) then {
 };
 
 _taskUniqueName = [_rangers, _objType, _objPos, _side, _extraVars1, _triggerType] call Zen_ObjectiveCreateTask;
-_objMarker = [_objPos, _side] call Zen_ObjectiveSpawnMarker;
+//_objMarker = [_objPos, _side] call Zen_ObjectiveSpawnMarker;
 
-_objMarker setMarkerText (([_taskUniqueName] call Zen_GetTaskDataGlobal) select 5);
-0 = [_objMarker, _rangers] call Zen_ShowHideMarkers;
+//_objMarker setMarkerText (([_taskUniqueName] call Zen_GetTaskDataGlobal) select 5);
+//0 = [_objMarker, _rangers] call Zen_ShowHideMarkers;
 
 switch (toLower _objType) do {
     case "box": {

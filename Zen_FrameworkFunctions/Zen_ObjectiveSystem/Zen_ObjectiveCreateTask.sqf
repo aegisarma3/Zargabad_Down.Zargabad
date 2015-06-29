@@ -55,7 +55,7 @@ switch (toLower _objType) do {
     };
     case "pow":{
         _txt1 = format ["Segundo um informante o VIP foi visto pela última vez sendo levado para mesquita. O VIP deve ser resgatado antes que as forças da OTAN entrem na cidade.", _sideString, toLower _triggerType];
-        _txt2 = format ["Contrato V12G1S2: Resgate de VIP", ([_triggerType] call Zen_StringCapitalizeLetter)];
+        _txt2 = format ["Contrato V02G1S2: Resgate de VIP", ([_triggerType] call Zen_StringCapitalizeLetter)];
     };
     case "convoy": {
         _txt1 = format ["The %1 are moving troops and supplies in a convoy.  %2 all of the vehicles.", _sideString, ([_triggerType] call Zen_StringCapitalizeLetter)];
@@ -73,6 +73,6 @@ switch (toLower _objType) do {
     };
 };
 
-_taskReturn = [_units, _txt1, _txt2, _taskDest] call Zen_InvokeTask;
+_taskReturn = [_units, _txt1, _txt2] call Zen_InvokeTask;
 call Zen_StackRemove;
 (_taskReturn)
