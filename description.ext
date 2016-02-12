@@ -73,7 +73,7 @@ class CfgSFX
 	{
 		name = "sfxsound2";
 		sounds[]={sfxsound};
-		sfxsound[]={"sounds\sfxsound2.ogg",15,1,18,1,1,1,0};
+		sfxsound[]={"sounds\sfxsound2.ogg",10,1,50,1,1,1,0};
 		empty[]= {"",0,0,0,0,0,0,0};
 	};
 
@@ -112,7 +112,7 @@ class CfgSFX
 	{
 		name = "sfxsound7";
 		sounds[]={sfxsound};
-		sfxsound[]={"sounds\sfxsound3.ogg",15,1,18,1,1,1,0};
+		sfxsound[]={"sounds\sfxsound3.ogg",20,1,50,1,1,1,0};
 		empty[]= {"",0,0,0,0,0,0,0};
 	};
 

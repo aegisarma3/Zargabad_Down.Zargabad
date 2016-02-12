@@ -17,7 +17,7 @@ _ObjectivePos = "VIP";
 // Deixa o marker transparente
 _ObjectivePos setMarkerAlpha 0;
 
-_yourObjective = [_ObjectivePos, (group p_1), BLUFOR, "POW", "rescue"] call Zen_CreateObjective;
+_yourObjective = [_ObjectivePos, (group s1), BLUFOR, "POW", "rescue"] call Zen_CreateObjective;
 
 // Seleciona o retorno do método como array e pega o valor do civil
 _pow = (_yourObjective select 0) select 0;
