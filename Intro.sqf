@@ -24,7 +24,7 @@ if (hasInterface) then {
 
     sleep 5;
 
-    ["<t size='1.0' color='#7A0A0A'>Zargabad Down<t font = 'puristaLight' <t size='0.5' color='#FFFFFF'>v3.0 - ZC<t font = 'puristaLight' t size='1.0' color='#FFFFFF'> Desenvolvida por <br/><t font = 'puristaLight t size='0.6' color='#FFFFFF'>Collumbus e Toaster [AEGIS]</t>",0,0.2,3,1,0.0] spawn bis_fnc_dynamictext;
+    ["<t size='1.0' color='#7A0A0A'>Zargabad Down<t font = 'puristaLight' <t size='0.5' color='#FFFFFF'>v4.0 - ZC<t font = 'puristaLight' t size='1.0' color='#FFFFFF'> Desenvolvida por <br/><t font = 'puristaLight t size='0.6' color='#FFFFFF'>Collumbus e Toaster [AEGIS]</t>",0,0.2,3,1,0.0] spawn bis_fnc_dynamictext;
 
     sleep 10;
 

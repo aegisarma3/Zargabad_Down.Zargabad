@@ -4,7 +4,7 @@
 
 
 author = "Collumbus & Toaster - AEGIS";
-onLoadName = "Zargabad Down";
+onLoadName = "Zargabad Down 4.0";
 onLoadMission = "Não é preciso ter olhos abertos para ver o sol, nem é preciso ter ouvidos afiados para ouvir o trovão. Para ser vitorioso você precisa ver o que não está visível. - Sun Tzu";
 loadScreen = "signs\MAIN.jpg";
 overviewPicture = "signs\MAIN.jpg";
@@ -43,11 +43,9 @@ class CfgCommunicationMenu {
     #include "Zen_FrameworkFunctions\Zen_FireSupportSystem\Zen_FireSupportMenu.hpp"
 };
 
-class CfgSounds
+class CfgSFX
 {
-
 	sounds[] = {};
-
 	class allah
 	{
 		name = "allah";
@@ -57,12 +55,111 @@ class CfgSounds
 
 	class alarme1
 	{
-		name = "alarme1"; 
-		sound[] = {\sounds\alarme1.ogg, 1, 1.0}; 
-		titles[] = {};
+		name = "alarme1";
+		sound[] = {\sounds\alarme1.ogg, 1, 1.0};
+  	titles[] = {};
 	}
 
 	#include "DEFUSE\sounds\cfgSounds.hpp"
+	class sfxsound
+	{
+		name = "sfxsound";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\sfxsound.ogg",15,1,18,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+
+	class sfxsound2
+	{
+		name = "sfxsound2";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\sfxsound2.ogg",15,1,18,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+
+	class sfxsound3
+	{
+		name = "sfxsound3";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\sfxsound3.ogg",15,1,18,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+
+	class sfxsound4
+	{
+		name = "sfxsound4";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\sfxsound4.ogg",15,1,18,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+
+	class sfxsound5
+	{
+		name = "sfxsound5";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\sfxsound5.ogg",15,1,18,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+				class sfxsound6
+	{
+		name = "sfxsound6";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\sfxsound2.ogg",15,1,18,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+
+	class sfxsound7
+	{
+		name = "sfxsound7";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\sfxsound3.ogg",15,1,18,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+
+	class sfxsound8
+	{
+		name = "sfxsound8";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\sfxsound4.ogg",15,1,18,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+
+	class sfxsound9
+	{
+		name = "news1";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\news1.ogg",15,1,18,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+				class sfxsound10
+	{
+		name = "music1";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\music1.ogg",15,1,18,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+
+	class sfxsound11
+	{
+		name = "music2";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\music2.ogg",15,1,18,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+				class sfxsound12
+	{
+		name = "kunduznews";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\kunduznews.ogg",15,1,18,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+				class sfxsound13
+	{
+		name = "SanginnewsBBC";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\SanginnewsBBC.ogg",15,1,18,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
 
 };
 
@@ -99,7 +196,7 @@ class CfgDebriefing
 		title = "Missão Finalizada";
 		subtitle = "";
 		description = "";
-		pictureBackground = "signs/logo.paa";
+		pictureBackground = "signs/cia.paa";
 		picture = "b_inf";
 	};
 	class Loser
@@ -109,8 +206,3 @@ class CfgDebriefing
         description = "O Protótipo NUKE destruiu toda a cidade.";
 	};
 };
-
-
-
-
-
