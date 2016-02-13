@@ -1,0 +1,1 @@
+call {[main_nuclear] execvm "nuclear\detonation.sqf";[main_nuclear] execvm "nuclear\config1.sqf"};

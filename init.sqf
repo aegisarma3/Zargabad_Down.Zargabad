@@ -7,10 +7,10 @@ enableSaving [false, false];
 
 //execVM "Intro.sqf";
 
-//[3, 500, 1200] execVM "MAD_traffic.sqf";
-
-
-// MISSÃO AEGIS
+// addon scripts
+execVM "scripts\ADF_civKiaCheck";    //Check de assassito de civis
+[10, 500, 10, 1]execVM "scripts\MAD_civilians.sqf";  //Ambientalização de civis
+[5, 500, 1000, 1]execVM "scripts\MAD_traffic.sqf";    //Ambientalização de veiculos
 
 _ObjectivePos = "VIP";
 
@@ -65,7 +65,7 @@ if (isServer) then {
     waitUntil {ARMED};
     ["Task_Defuse", "Failed"] call BIS_fnc_taskSetState;
     sleep 10;
-    ["LOSER", false] call BIS_fnc_endMission;
+//  ["LOSER", false] call BIS_fnc_endMission;
 };
 
 diag_log format["Initialisation Completed"];

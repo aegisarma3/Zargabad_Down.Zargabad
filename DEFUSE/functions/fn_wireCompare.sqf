@@ -12,7 +12,7 @@ if (_compare) then {
 	playSound "button_close";
 } else {
 	cutText ["BOMB ARMED", "PLAIN DOWN"];
-	ARMED = true;
+	ARMED = true;nuke_activated = true; nuke_detonate = true;
 	playSound "button_wrong";
 };
 

@@ -18,7 +18,7 @@ class Header
 {
 	gameType = COOP;
 	minPlayers = 1;
-	maxPlayers = 60;
+	maxPlayers = 50;
 };
 
 
@@ -52,13 +52,6 @@ class CfgSFX
 		sound[] = {\sounds\allah.ogg, 1, 1.0};
 		titles[] = {};
 	};
-
-	class alarme1
-	{
-		name = "alarme1";
-		sound[] = {\sounds\alarme1.ogg, 1, 1.0};
-  	titles[] = {};
-	}
 
 	#include "DEFUSE\sounds\cfgSounds.hpp"
 	class sfxsound
@@ -131,7 +124,8 @@ class CfgSFX
 		sfxsound[]={"sounds\news1.ogg",15,1,18,1,1,1,0};
 		empty[]= {"",0,0,0,0,0,0,0};
 	};
-				class sfxsound10
+
+	class sfxsound10
 	{
 		name = "music1";
 		sounds[]={sfxsound};
@@ -146,20 +140,39 @@ class CfgSFX
 		sfxsound[]={"sounds\music2.ogg",15,1,18,1,1,1,0};
 		empty[]= {"",0,0,0,0,0,0,0};
 	};
-				class sfxsound12
+
+	class sfxsound12
 	{
 		name = "kunduznews";
 		sounds[]={sfxsound};
 		sfxsound[]={"sounds\kunduznews.ogg",15,1,18,1,1,1,0};
 		empty[]= {"",0,0,0,0,0,0,0};
 	};
-				class sfxsound13
+
+	class sfxsound13
 	{
 		name = "SanginnewsBBC";
 		sounds[]={sfxsound};
 		sfxsound[]={"sounds\SanginnewsBBC.ogg",15,1,18,1,1,1,0};
 		empty[]= {"",0,0,0,0,0,0,0};
 	};
+
+	class sfxsound14
+	{
+		name = "nuke-som";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\nuke.ogg",60,1,2500,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+
+	class sfxsound15
+	{
+		name = "alarme";
+		sounds[]={sfxsound};
+		sfxsound[]={"sounds\alarme.ogg",40,1,1000,1,1,1,0};
+		empty[]= {"",0,0,0,0,0,0,0};
+	};
+
 
 };
 
@@ -170,7 +183,7 @@ class CfgFunctions {
 };
 
 
-class CfgMusic
+/*class CfgMusic
 {
 	tracks[]={};
 
@@ -185,11 +198,11 @@ class CfgMusic
         name = "";
         sound[] = {"\sounds\arab.ogg", db+0, 1.0};
     };
-};
+};*/
 
 
 
-class CfgDebriefing
+/*class CfgDebriefing
 {
 	class End1
 	{
@@ -205,4 +218,4 @@ class CfgDebriefing
 		subtitle = "Fracasso";
         description = "O Protótipo NUKE destruiu toda a cidade.";
 	};
-};
+};*/

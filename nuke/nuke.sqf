@@ -9,7 +9,7 @@
 
 _Cone = "#particlesource" createVehicleLocal getpos nukepos;
 _Cone setParticleParams [["A3\Data_F\ParticleEffects\Universal\universal.p3d", 16, 7, 48], "", "Billboard", 1, 10, [0, 0, 0],
-				[0, 0, 0], 0, 1.275, 1, 0, [40,80], [[0.25, 0.25, 0.25, 0], [0.25, 0.25, 0.25, 0.5], 
+				[0, 0, 0], 0, 1.275, 1, 0, [40,80], [[0.25, 0.25, 0.25, 0], [0.25, 0.25, 0.25, 0.5],
 				[0.25, 0.25, 0.25, 0.5], [0.25, 0.25, 0.25, 0.05], [0.25, 0.25, 0.25, 0]], [0.25], 0.1, 1, "", "", nukepos];
 _Cone setParticleRandom [2, [1, 1, 30], [1, 1, 30], 0, 0, [0, 0, 0, 0.1], 0, 0];
 _Cone setParticleCircle [10, [-10, -10, 20]];
@@ -29,7 +29,7 @@ _top2 setDropInterval 0.002;
 
 _smoke = "#particlesource" createVehicleLocal getpos nukepos;
 _smoke setParticleParams [["A3\Data_F\ParticleEffects\Universal\universal.p3d", 16, 7, 48, 1], "", "Billboard", 1, 25, [0, 0, 0],
-				[0, 0, 60], 0, 1.7, 1, 0, [40,15,120], 
+				[0, 0, 60], 0, 1.7, 1, 0, [40,15,120],
 				[[1, 1, 1, 0.4],[1, 1, 1, 0.7],[1, 1, 1, 0.7],[1, 1, 1, 0.7],[1, 1, 1, 0.7],[1, 1, 1, 0.7],[1, 1, 1, 0.7],[1, 1, 1, 0]]
 				, [0.5, 0.1], 1, 1, "", "", nukepos];
 _smoke setParticleRandom [0, [10, 10, 15], [15, 15, 7], 0, 0, [0, 0, 0, 0], 0, 0, 360];
@@ -37,7 +37,7 @@ _smoke setDropInterval 0.002;
 
 _Wave = "#particlesource" createVehicleLocal getpos nukepos;
 _Wave setParticleParams [["A3\Data_F\ParticleEffects\Universal\universal.p3d", 16, 7, 48], "", "Billboard", 1, 20, [0, 0, 0],
-				[0, 0, 0], 0, 1.5, 1, 0, [50, 100], [[0.1, 0.1, 0.1, 0.5], 
+				[0, 0, 0], 0, 1.5, 1, 0, [50, 100], [[0.1, 0.1, 0.1, 0.5],
 				[0.5, 0.5, 0.5, 0.5], [1, 1, 1, 0.3], [1, 1, 1, 0]], [1,0.5], 0.1, 1, "", "", nukepos];
 _Wave setParticleRandom [2, [20, 20, 20], [5, 5, 0], 0, 0, [0, 0, 0, 0.1], 0, 0];
 _Wave setParticleCircle [50, [-80, -80, 2.5]];
@@ -89,7 +89,7 @@ deleteVehicle _light;
 sleep 2;
 
 _smoke setParticleParams [["A3\Data_F\ParticleEffects\Universal\universal.p3d", 16, 7, 48, 1], "", "Billboard", 1, 25, [0, 0, 0],
-				[0, 0, 45], 0, 1.7, 1, 0, [40,25,80], 
+				[0, 0, 45], 0, 1.7, 1, 0, [40,25,80],
 				[[1, 1, 1, 0.2],[1, 1, 1, 0.3],[1, 1, 1, 0.3],[1, 1, 1, 0.3],[1, 1, 1, 0.3],[1, 1, 1, 0.3],[1, 1, 1, 0.3],[1, 1, 1, 0]]
 				, [0.5, 0.1], 1, 1, "", "", nukepos];
 
@@ -100,7 +100,7 @@ _Wave setDropInterval 0.001;
 sleep 2;
 
 _smoke setParticleParams [["A3\Data_F\ParticleEffects\Universal\universal.p3d", 16, 7, 48, 1], "", "Billboard", 1, 25, [0, 0, 0],
-				[0, 0, 30], 0, 1.7, 1, 0, [40,25,80], 
+				[0, 0, 30], 0, 1.7, 1, 0, [40,25,80],
 				[[1, 1, 1, 0.2],[1, 1, 1, 0.3],[1, 1, 1, 0.3],[1, 1, 1, 0.3],[1, 1, 1, 0.3],[1, 1, 1, 0.3],[1, 1, 1, 0.3],[1, 1, 1, 0]]
 				, [0.5, 0.1], 1, 1, "", "", nukepos];
 _smoke setDropInterval 0.012;
