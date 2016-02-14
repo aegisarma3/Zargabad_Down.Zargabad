@@ -846,7 +846,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3361.9941,10.218432,1192.6694};
+					position[]={3346.8677,10.090277,1191.4233};
 					azimut=-38.160042;
 					id=39;
 					side="WEST";
@@ -2871,14 +2871,13 @@ class Mission
 		class Item138
 		{
 			position[]={3334.3638,10.032072,1192.1179};
-			azimut=-205.80099;
+			azimut=-210.737;
 			id=214;
 			side="EMPTY";
 			vehicle="I_Truck_02_covered_F";
 			leader=1;
 			skill=0.60000002;
 			text="v5";
-			init="this setObjectTextureGlobal [0, ""signs\UN_TruckCab.paa""];";
 		};
 		class Item139
 		{

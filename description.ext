@@ -6,8 +6,8 @@
 author = "Collumbus & Toaster - AEGIS";
 onLoadName = "Zargabad Down 4.0";
 onLoadMission = "Não é preciso ter olhos abertos para ver o sol, nem é preciso ter ouvidos afiados para ouvir o trovão. Para ser vitorioso você precisa ver o que não está visível. - Sun Tzu";
-loadScreen = "signs\MAIN.jpg";
-overviewPicture = "signs\MAIN.jpg";
+loadScreen = "\aegis_missions_pack_zc\images\zargabad_down_loadscreen.jpg";
+overviewPicture = "\aegis_missions_pack_zc\images\zargabad_down_loadscreen.jpg";
 
 
 onLoadIntro = "";
