@@ -8,9 +8,9 @@ enableSaving [false, false];
 //execVM "Intro.sqf";
 
 // addon scripts
-execVM "scripts\ADF_civKiaCheck";    //Check de assassito de civis
-[10, 500, 10, 1]execVM "scripts\MAD_civilians.sqf";  //Ambientalização de civis
-[5, 500, 1000, 1]execVM "scripts\MAD_traffic.sqf";    //Ambientalização de veiculos
+[10, 500, 10]execVM "scripts\MAD_civilians.sqf";  //Ambientalização de civis
+[5, 500, 1000]execVM "scripts\MAD_traffic.sqf";    //Ambientalização de veiculos
+[] spawn {call compile preprocessFileLineNumbers "scripts\EPD\Ied_Init.sqf";}; // IED
 
 _ObjectivePos = "VIP";
 

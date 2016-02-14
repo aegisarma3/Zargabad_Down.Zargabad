@@ -180,6 +180,7 @@ class CfgSFX
 class CfgFunctions {
 	#include "functions\cfgFunctions.hpp"
 	#include "DEFUSE\functions\cfgFunctions.hpp"
+	#include "scripts\EPD\EPDcfgFunctions.hpp"
 };
 
 
