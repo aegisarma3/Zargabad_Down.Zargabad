@@ -1,30 +1,13 @@
-#include "Zen_FrameworkFunctions\Zen_InitHeader.sqf";
+execVM "Intro.sqf";
 
 waitUntil { isServer || !isNull player };
 
 enableSaving [false, false];
 
-
-//execVM "Intro.sqf";
-
 // addon scripts
 [10, 500, 10]execVM "scripts\MAD_civilians.sqf";  //Ambientalização de civis
-[5, 500, 1000]execVM "scripts\MAD_traffic.sqf";    //Ambientalização de veiculos
+[3, 500, 500]execVM "scripts\MAD_traffic.sqf";    //Ambientalização de veiculos
 [] spawn {call compile preprocessFileLineNumbers "scripts\EPD\Ied_Init.sqf";}; // IED
-
-_ObjectivePos = "VIP";
-
-// Deixa o marker transparente
-_ObjectivePos setMarkerAlpha 0;
-
-_yourObjective = [_ObjectivePos, (group s1), BLUFOR, "POW", "rescue"] call Zen_CreateObjective;
-
-// Seleciona o retorno do método como array e pega o valor do civil
-_pow = (_yourObjective select 0) select 0;
-
-// Posiciona o VIP na altura correta
-_pow setPosATL (_pow modelToWorld[0,0,4.2]);
-
 
 //NUKE codigo
 CODEINPUT = [];

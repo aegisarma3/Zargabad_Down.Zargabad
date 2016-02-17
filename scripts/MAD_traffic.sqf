@@ -2,7 +2,7 @@
 //by MAD T, NSS-Gamers.com
 //credits to TPW for TPW MODS: enhanced realism/immersion, without him this would not be possible.
 
-//Note: This is a derivative work of TPW´s TPW MODS: enhanced realism/immersion. It contains some code of it but it´s main difference is that this
+//Note: This is a derivative work of TPWï¿½s TPW MODS: enhanced realism/immersion. It contains some code of it but itï¿½s main difference is that this
 //works on dedicated servers. It is still WIP;
 
 MAD_maxCarDensity = _this select 0; //number of cars around 1 player at the same time
@@ -14,50 +14,26 @@ MAD_carsArray = [];
 _centerC = createCenter civilian;
 
 MAD_civlist = [
-"C_man_p_beggar_F",
-"C_man_1",
-"C_man_polo_1_F",
-"C_man_polo_2_F",
-"C_man_polo_3_F",
-"C_man_polo_4_F",
-"C_man_polo_5_F",
-"C_man_polo_6_F",
-"C_man_shorts_1_F",
-"C_man_1_1_F",
-"C_man_1_2_F",
-"C_man_1_3_F",
-"C_man_p_fugitive_F",
-"C_man_p_shorts_1_F",
-"C_man_hunter_1_F",
-"C_man_shorts_2_F",
-"C_man_shorts_3_F",
-"C_man_shorts_4_F"
+"LOP_Tak_Civ_Man_01",
+"LOP_Tak_Civ_Man_02",
+"LOP_Tak_Civ_Man_04"
 ];
 
 MAD_civClothes = [
-"U_Competitor",
-"U_C_HunterBody_grn",
-"U_C_Poloshirt_blue",
-"U_C_Poloshirt_burgundy",
-"U_C_Poloshirt_redwhite",
-"U_C_Poloshirt_salmon",
-"U_C_Poloshirt_stripped",
-"U_C_Poloshirt_tricolour",
-"U_C_Poor_1",
-"U_C_Poor_2",
-"U_IG_Guerilla2_2",
-"U_IG_Guerilla2_3",
-"U_IG_Guerilla3_1",
-"U_IG_Guerilla3_2",
-"U_NikosBody",
-"U_Rangemaster"];
+"LOP_U_TAK_Civ_Fatigue_01",
+"LOP_U_TAK_Civ_Fatigue_02",
+"LOP_U_TAK_Civ_Fatigue_04"
+];
 
 MAD_civCarList = [
-"C_Hatchback_01_F",
-"C_Offroad_01_F",
-"C_Quadbike_01_F",
-"C_SUV_01_F"
-]; 
+"LOP_TAK_Civ_Hatchback",
+"LOP_TAK_Civ_Offroad",
+"LOP_TAK_Civ_UAZ",
+"LOP_TAK_Civ_UAZ_Open",
+"LOP_TAK_Civ_Landrover",
+"LOP_TAK_Civ_Ural",
+"LOP_TAK_Civ_Ural_open"
+];
 
 MAD_comCarList = [
 "C_Van_01_box_F",
@@ -68,26 +44,26 @@ MAD_comCarList = [
 MAD_getDrivingRoads =
 {
 	_position = _this;
-	
+
 	_roads = _position nearRoads MAD_maxCarDistance;
-	
+
 	_roads
 };
 
 MAD_getSpawnRoads =
 {
 	_position = _this;
-	
+
 	_roads = _position nearRoads MAD_maxCarDistance;
-	
+
 	_farRoads = [];
 	{
-		if (_position distance position _x > MAD_carSpawnDistance) then 
+		if (_position distance position _x > MAD_carSpawnDistance) then
 		{
 			_farRoads = _farRoads + [_x];
 		};
 	} foreach _roads;
-	
+
 	_farRoads
 };
 
@@ -126,7 +102,7 @@ MAD_spawnCar =
 	_count = _this select 1;
 
 	_roads = _position call MAD_getSpawnRoads;
-	
+
 	if (count _roads > 0) then
 	{
 		_carlist = MAD_civCarList;
@@ -142,9 +118,9 @@ MAD_spawnCar =
 		_car = _carlist select (floor (random (count _carlist)));
 		_sqname = creategroup civilian;
 		_spawncar = _car createVehicle _spawnpos;
-		_spawncar setdir _spawndir; 
+		_spawncar setdir _spawndir;
 		_spawncar setfuel 0.5 + (random 0.5);
-		
+
 		MAD_carsArray = MAD_carsArray + [_spawncar];
 
 		//Driver
@@ -153,23 +129,23 @@ MAD_spawnCar =
 		_driver moveindriver _spawncar;
 		_driver setbehaviour "SAFE";
 		_spawncar setvariable ["MAD_car_driver", _driver];
-		
+
 		[leader _sqname] call MAD_carWaypoint;
 	};
 };
 
-MAD_carWaypoint = 
+MAD_carWaypoint =
 {
 	_driver = _this select 0;
 	_grp = group _driver;
 	_locations = nearestLocations [getPos _driver, ["NameVillage","NameCity","NameCityCapital","NameLocal","CityCenter"], 30000];
 	_randomLocation = _locations select (floor (random (count _locations)));
 	_locationPos = locationPosition _randomLocation;
-	
+
 	_roads = _locationPos call MAD_getDrivingRoads;
-	
+
 	_road = _roads select (floor (random (count _roads)));
-	_wp = getposasl _road; 
+	_wp = getposasl _road;
 	_waypoint = _grp addWaypoint [_wp, 0];
 	[_grp,0] setWaypointCompletionRadius 30;
 	_waypoint setWaypointStatements ["true", "[this] call MAD_carWaypoint"]
@@ -178,7 +154,7 @@ MAD_carWaypoint =
 MAD_deleteCars =
 {
 	private ["_car", "_owner", "_players", "_driver"];
-	
+
 	_players = [];
 
 	if (isMultiplayer) then
@@ -205,7 +181,7 @@ MAD_deleteCars =
 				_c = _c + 1;
 			};
 		} forEach _players;
-		
+
 		if (_c == (count _players)) then
 		{
 			_driver = (_car getvariable ["MAD_car_driver", objNull]);
@@ -217,7 +193,7 @@ MAD_deleteCars =
 				deleteVehicle _driver;
 				deleteGroup _group;
 			};
-			
+
 			MAD_carsArray = MAD_carsArray - [_car];
 
 			deleteVehicle _car;

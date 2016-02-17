@@ -1,8 +1,8 @@
 //MAD Ambient Life (Civilians) v1, SP and fully MP compatible
 //by MAD T, NSS-Gamers.com
-//credits to TPW for his TPW´s TPW MODS: enhanced realism/immersion, without him this would not be possible.
+//credits to TPW for his TPWï¿½s TPW MODS: enhanced realism/immersion, without him this would not be possible.
 
-//Note: This is a derivative work of TPW´s TPW MODS: enhanced realism/immersion. It contains some code of it but it´s main difference is that this
+//Note: This is a derivative work of TPWï¿½s TPW MODS: enhanced realism/immersion. It contains some code of it but itï¿½s main difference is that this
 //works on dedicated servers. It is still WIP;
 
 MAD_maxCivDensity = _this select 0; //number of civs around 1 player at the same time
@@ -14,43 +14,16 @@ MAD_CivsArray = [];
 _centerC = createCenter civilian;
 
 MAD_civlist = [
-"C_man_p_beggar_F",
-"C_man_1",
-"C_man_polo_1_F",
-"C_man_polo_2_F",
-"C_man_polo_3_F",
-"C_man_polo_4_F",
-"C_man_polo_5_F",
-"C_man_polo_6_F",
-"C_man_shorts_1_F",
-"C_man_1_1_F",
-"C_man_1_2_F",
-"C_man_1_3_F",
-"C_man_p_fugitive_F",
-"C_man_p_shorts_1_F",
-"C_man_hunter_1_F",
-"C_man_shorts_2_F",
-"C_man_shorts_3_F",
-"C_man_shorts_4_F"
+"LOP_Tak_Civ_Man_01",
+"LOP_Tak_Civ_Man_02",
+"LOP_Tak_Civ_Man_04"
 ];
 
 MAD_civClothes = [
-"U_Competitor",
-"U_C_HunterBody_grn",
-"U_C_Poloshirt_blue",
-"U_C_Poloshirt_burgundy",
-"U_C_Poloshirt_redwhite",
-"U_C_Poloshirt_salmon",
-"U_C_Poloshirt_stripped",
-"U_C_Poloshirt_tricolour",
-"U_C_Poor_1",
-"U_C_Poor_2",
-"U_IG_Guerilla2_2",
-"U_IG_Guerilla2_3",
-"U_IG_Guerilla3_1",
-"U_IG_Guerilla3_2",
-"U_NikosBody",
-"U_Rangemaster"];
+"LOP_U_TAK_Civ_Fatigue_01",
+"LOP_U_TAK_Civ_Fatigue_02",
+"LOP_U_TAK_Civ_Fatigue_04"
+];
 
 MAD_housesList = [
 "Land_i_House_Small_01_V1_F",
@@ -261,7 +234,7 @@ if (isServer) then
 		while {true} do
 		{
 			call MAD_deleteCivs;
-			
+
 			_count = 0;
 			{
 				if (_x distance player < MAD_maxCivDistance) then
