@@ -8,7 +8,6 @@ enableSaving [false, false];
 [10, 500, 10]execVM "scripts\MAD_civilians.sqf";  //Ambientalização de civis
 [3, 500, 500]execVM "scripts\MAD_traffic.sqf";    //Ambientalização de veiculos
 [] spawn {call compile preprocessFileLineNumbers "scripts\EPD\Ied_Init.sqf";}; // IED
-[]execVM "scripts\torres.sqf";  //segurança do acampamento
 
 //NUKE codigo
 CODEINPUT = [];
