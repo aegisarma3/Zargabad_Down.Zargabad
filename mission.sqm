@@ -2946,12 +2946,11 @@ class Mission
 		class Item1
 		{
 			position[]={3575.4368,23.749512,3836.2612};
-			azimut=127.43243;
+			azimut=127.432;
 			id=130;
 			side="EMPTY";
 			vehicle="B_G_Mortar_01_F";
 			skill=0.60000002;
-			init="veh = [this, 30, 21600, 0, FALSE, FALSE] execVM ""vehicle.sqf"";";
 		};
 		class Item2
 		{
@@ -4433,7 +4432,7 @@ class Mission
 		class Item143
 		{
 			position[]={3710.6777,16.874228,4042.6919};
-			azimut=-87.150841;
+			azimut=-87.150803;
 			special="NONE";
 			id=272;
 			side="EMPTY";
@@ -4441,7 +4440,7 @@ class Mission
 			lock="UNLOCKED";
 			skill=0.60000002;
 			text="main_nuclear";
-			init="call {[this] execvm ""leerkfz.sqf""; [this, 30] execvm ""nuclear\geiger.sqf""}; this addaction [localize ""STR_NuclearActive"", ""nuclear\nuclear.sqf""];";
+			init="call {[this, 30] execvm ""nuclear\geiger.sqf""}; this addaction [localize ""STR_NuclearActive"", ""nuclear\nuclear.sqf""];";
 		};
 		class Item144
 		{
@@ -6416,7 +6415,7 @@ class Mission
 		};
 		class Item22
 		{
-			position[]={4054.0864,16.176556,4292.2505};
+			position[]={4053.344,16.156984,4290.6787};
 			a=1200;
 			b=1000;
 			angle=90;
