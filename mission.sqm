@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3766.8955,227.95578,1309.826};
-		dir[]={0.78128189,-0.55679166,-0.28230861};
-		up[]={0.52368933,0.83062303,-0.1892277};
-		aside[]={-0.33985227,8.5616193e-008,-0.94054365};
+		pos[]={3365.4756,133.57373,1120.0778};
+		dir[]={-0.14585455,-0.83807337,0.52578151};
+		up[]={-0.22403321,0.5455116,0.80760467};
+		aside[]={0.96365285,-2.1886081e-007,0.26732337};
 	};
 };
 binarizationWanted=0;
@@ -106,6 +106,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -154,25 +173,6 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
 		nAttributes=2;
 	};
 	class Category1
@@ -204,7 +204,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Zargabad Down - L";
+		briefingName="Zargabad Down ";
 		resistanceWest=0;
 		timeOfChanges=2700;
 		startWeather=0;
@@ -13090,7 +13090,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeHeadgear this;  this addHeadgear ""LOP_H_Beret_UN"";removeAllWeapons this;";
+						init="removeHeadgear this;  this addHeadgear ""LOP_H_Beret_UN"";removeAllWeapons this;this disableAi ""move""";
 					};
 					id=554;
 					type="rhsusf_army_ucp_officer";
@@ -13121,7 +13121,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeHeadgear this;  this addHeadgear ""LOP_H_Beret_UN"";removeAllWeapons this; ";
+						init="removeHeadgear this;  this addHeadgear ""LOP_H_Beret_UN"";removeAllWeapons this; this disableAi ""move""";
 					};
 					id=556;
 					type="rhsusf_army_ucp_officer";
@@ -15325,11 +15325,11 @@ class Mission
 		class Item458
 		{
 			dataType="Trigger";
-			position[]={3363.0913,10.967489,1227.9171};
+			position[]={3363.0911,10.967484,1227.917};
 			class Attributes
 			{
 				text="sfx_radio_1";
-				condition="this && sunOrMoon == 1;";
+				condition="true";
 				sizeA=10;
 				sizeB=10;
 				interuptable=1;
