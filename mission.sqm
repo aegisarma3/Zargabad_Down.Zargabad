@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=893;
+		nextID=894;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4808.0898,106.33262,4418.583};
-		dir[]={-0.28050894,-0.24434468,0.92824155};
-		up[]={-0.070682637,0.96968412,0.23389874};
-		aside[]={0.95725745,-8.479401e-008,0.28927687};
+		pos[]={3766.8955,227.95578,1309.826};
+		dir[]={0.78128189,-0.55679166,-0.28230861};
+		up[]={0.52368933,0.83062303,-0.1892277};
+		aside[]={-0.33985227,8.5616193e-008,-0.94054365};
 	};
 };
 binarizationWanted=0;
@@ -106,25 +106,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -173,6 +154,25 @@ class CustomAttributes
 				};
 			};
 		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
 		nAttributes=2;
 	};
 	class Category1
@@ -204,7 +204,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Zargabad Down";
+		briefingName="Zargabad Down - L";
 		resistanceWest=0;
 		timeOfChanges=2700;
 		startWeather=0;
@@ -219,7 +219,7 @@ class Mission
 		windForced=1;
 		year=2016;
 		month=2;
-		day=19;
+		day=20;
 		minute=0;
 		startFogDecay=0.0049999999;
 		forecastFogDecay=0.0049999999;
@@ -568,11 +568,11 @@ class Mission
 		class Item26
 		{
 			dataType="Trigger";
-			position[]={5018.041,33.18573,1904.7218};
+			position[]={5018.041,33.185562,1904.722};
 			class Attributes
 			{
 				text="sfx_music_arab_1";
-				condition="this && sunOrMoon == 1;";
+				condition="true";
 				sizeA=20;
 				sizeB=20;
 				interuptable=1;
@@ -12313,7 +12313,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5014.2061,33.226723,1881.3228};
+				position[]={5014.2061,33.226738,1881.323};
 			};
 			id=511;
 			type="ModuleTaskCreate_F";
@@ -12334,7 +12334,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=-1;
 						};
 					};
 				};
@@ -12391,7 +12391,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="Kallin Ralhaa  possui o hábito de  ir à mesquita central de Zargabad todos os sábados por volta das 8:00. Este pode ser um ponto interessante para os agentes observa-lo  e prepararem uma emboscada. Deve-se ter muita atenção com a aproximação, pois o politico possui seguranças fortimente armados ao seu redor.";
 						};
 					};
 				};
