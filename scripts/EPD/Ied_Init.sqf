@@ -104,6 +104,6 @@ if(isserver) then {
 };
 
 waituntil{sleep .5; (!isnull player and iedsAdded)};
-player sidechat "Synching IEDs... You may experience lag for a few seconds";
+
 
 [] call ADD_DISARM_AND_PROJECTILE_DETECTION;
