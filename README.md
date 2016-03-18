@@ -39,7 +39,7 @@ center][img]http://i.imgur.com/qz1qvwO.png[/img][/center]
 8-Explosivista[/left]
 
 ------------------------------------------------------------------------------------Bravo-----------------------------------------------------------------------------------
-[left]1-Líder de Equipe  
+[left]1-Líder de Equipe
 2-Operador de Radio 1
 3-Fuzileiro AT
 4-Médico de Campo
