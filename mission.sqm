@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1172;
+		nextID=1177;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3416.6321,254.90164,1057.9043};
-		dir[]={-0.27134129,-0.59934843,0.75321555};
-		up[]={-0.20316006,0.80041504,0.56395525};
-		aside[]={0.94089961,-3.0070078e-007,0.33895335};
+		pos[]={3323.7388,29.427891,1186.7173};
+		dir[]={-0.24664606,-0.76158869,0.59932721};
+		up[]={-0.28984991,0.64802325,0.70430946};
+		aside[]={0.92476857,2.5976078e-007,0.38057813};
 	};
 };
 binarizationWanted=0;
@@ -8623,8 +8623,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3350.5291,10.634405,1216.2179};
-						angles[]={0.019996032,4.2723837,0.0025135824};
+						position[]={3349.8513,10.628718,1215.6826};
+						angles[]={6.2631893,4.2723913,0.0025135824};
 					};
 					side="West";
 					flags=2;
@@ -8633,7 +8633,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						name="s13";
-						description="Líder geral  UN - Zeca - Alpha";
+						description="Líder geral  UN - Alpha";
 						isPlayable=1;
 					};
 					id=326;
@@ -8686,15 +8686,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3347.8235,10.571855,1213.5194};
-						angles[]={6.2606921,1.0468583,0.01499443};
+						position[]={3347.1453,10.549624,1212.9836};
+						angles[]={6.2606921,1.0468659,0.01499443};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s15";
-						description="Fuzileiro Automático";
+						description="Fuzileiro Automático - Alpha";
 						isPlayable=1;
 					};
 					id=328;
@@ -8747,15 +8747,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3348.5642,10.547129,1212.1775};
-						angles[]={6.2606897,1.0468583,0.0049914722};
+						position[]={3347.8862,10.538595,1211.6416};
+						angles[]={0,1.0468659,0.024993783};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s16";
-						description="Granadeiro";
+						description="Granadeiro - Alpha";
 						isPlayable=1;
 					};
 					id=329;
@@ -8808,15 +8808,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3345.1243,10.653274,1218.4126};
-						angles[]={6.255693,1.0468583,0.014998405};
+						position[]={3344.4463,10.628394,1217.8777};
+						angles[]={6.255693,1.0468659,0.014998405};
 					};
 					side="West";
 					class Attributes
 					{
+						health=0.55958706;
 						skill=0.60000002;
 						name="s20";
-						description="Operador de Radio 1";
+						description="Operador de Radio 1 - Alpha";
 						isPlayable=1;
 					};
 					id=383;
@@ -8869,8 +8870,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3346.3591,10.604183,1215.9325};
-						angles[]={6.2606921,1.025321,0.01499443};
+						position[]={3345.6812,10.581954,1215.3966};
+						angles[]={6.2606921,1.0253286,0.01499443};
 					};
 					side="West";
 					class Attributes
@@ -8878,7 +8879,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						name="s18";
-						description="Médico de Campo";
+						description="Médico de Campo - Alpha";
 						isPlayable=1;
 					};
 					id=896;
@@ -8931,15 +8932,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3349.3906,10.557673,1210.8129};
-						angles[]={0.0075011365,1.0468583,0.0049914722};
+						position[]={3348.7134,10.550356,1210.2776};
+						angles[]={0,1.0468659,0.012496647};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s17";
-						description="Explosivista";
+						description="Explosivista - Alpha";
 						isPlayable=1;
 					};
 					id=908;
@@ -8992,15 +8993,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3345.6968,10.628141,1217.1864};
-						angles[]={6.255693,1.0468583,0.014998405};
+						position[]={3345.0193,10.603244,1216.6506};
+						angles[]={6.255693,1.0468659,0.014998405};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s19";
-						description="Operador de radio 2";
+						description="Operador de radio 2 - Alpha";
 						isPlayable=1;
 					};
 					id=909;
@@ -9053,15 +9054,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3346.9458,10.590532,1214.9347};
-						angles[]={6.2606921,1.0468583,0.01499443};
+						position[]={3346.2683,10.568331,1214.3997};
+						angles[]={6.2606921,1.0468659,0.01499443};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s14";
-						description="Fuzileiro Automático";
+						description="Fuzileiro Automático - Alpha";
 						isPlayable=1;
 					};
 					id=910;
@@ -10141,8 +10142,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3344.6721,10.716398,1226.5569};
-						angles[]={0,4.3479261,6.2756844};
+						position[]={3344.6721,10.716398,1226.557};
+						angles[]={0,4.347929,6.2756805};
 					};
 					side="West";
 					flags=2;
@@ -10151,7 +10152,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						name="s23";
-						description="Líder equipe Bravo";
+						description="Líder equipe  - Bravo";
 						isPlayable=1;
 					};
 					id=387;
@@ -10204,15 +10205,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3340.7393,10.764661,1225.9266};
-						angles[]={6.2731905,1.1224003,6.2756844};
+						position[]={3340.739,10.764666,1225.927};
+						angles[]={6.2731848,1.1224037,6.2756805};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s25";
-						description="Fuzileiro Automático";
+						description="Fuzileiro Automático  - Bravo";
 						isPlayable=1;
 					};
 					id=389;
@@ -10265,15 +10266,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3342.0977,10.726303,1223.1095};
-						angles[]={6.2731905,1.1224003,6.2756844};
+						position[]={3342.0979,10.726295,1223.109};
+						angles[]={6.2731848,1.1224037,6.2756805};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s27";
-						description="Granadeiro";
+						description="Granadeiro - Bravo";
 						isPlayable=1;
 					};
 					id=391;
@@ -10326,15 +10327,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3339.7556,10.786837,1228.67};
-						angles[]={0.0024897563,1.1224003,0.012496647};
+						position[]={3339.7561,10.786841,1228.67};
+						angles[]={0.0024958209,1.1224037,0.012496558};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s29";
-						description="Médico de Campo";
+						description="Médico de Campo  - Bravo";
 						isPlayable=1;
 					};
 					id=394;
@@ -10387,15 +10388,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3339.9709,10.784337,1227.405};
-						angles[]={6.2731848,1.1224003,0.022495884};
+						position[]={3339.9709,10.784336,1227.405};
+						angles[]={6.2731848,1.1224037,0.022497294};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s24";
-						description="Operador de Radio";
+						description="Operador de Radio - Bravo";
 						isPlayable=1;
 					};
 					id=911;
@@ -10448,15 +10449,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3341.3767,10.74594,1224.5326};
-						angles[]={6.2731905,1.1224003,6.2756844};
+						position[]={3341.377,10.745942,1224.5331};
+						angles[]={6.2731848,1.1224037,6.2756805};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s26";
-						description="Fuzileiro Automático";
+						description="Fuzileiro Automático - Bravo";
 						isPlayable=1;
 					};
 					id=912;
@@ -10509,15 +10510,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3342.4309,10.707966,1221.5984};
-						angles[]={6.2382159,1.1224003,0.027492445};
+						position[]={3342.4309,10.707949,1221.598};
+						angles[]={6.2382083,1.1224037,0.027488936};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s21";
-						description="Explosivista";
+						description="Explosivista - Bravo";
 						isPlayable=1;
 					};
 					id=907;
@@ -10570,15 +10571,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3343.3586,10.670642,1220.202};
-						angles[]={6.2382159,1.1224003,0.027492445};
+						position[]={3343.3589,10.670648,1220.202};
+						angles[]={6.2382083,1.1224037,0.027488936};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s22";
-						description="AT";
+						description="Fuzileiro AT - Bravo";
 						isPlayable=1;
 					};
 					id=385;
@@ -10645,7 +10646,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3311.532,9.882823,1217.8831};
-						angles[]={6.2506976,4.260581,0.01749678};
+						angles[]={6.2507048,4.2605758,0.017488198};
 					};
 					side="West";
 					flags=2;
@@ -10654,7 +10655,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						name="s28";
-						description="Piloto Delta 1";
+						description="Condutor - Delta1";
 						isPlayable=1;
 					};
 					id=393;
@@ -10707,15 +10708,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3308.4087,9.8034601,1216.3674};
-						angles[]={6.2581916,1.0350556,0.010000871};
+						position[]={3308.4089,9.8034534,1216.3671};
+						angles[]={6.2581921,1.03505,0.010000736};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s30";
-						description="Tripulante - Delta 1";
+						description="Tripulante - Delta1";
 						isPlayable=1;
 					};
 					id=395;
@@ -10768,8 +10769,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3308.5215,9.8445511,1217.9659};
-						angles[]={6.2581916,1.1642451,0.010000871};
+						position[]={3308.521,9.8445492,1217.9661};
+						angles[]={6.2581921,1.1642393,0.010000736};
 					};
 					side="West";
 					class Attributes
@@ -10777,7 +10778,7 @@ class Mission
 						skill=0.60000002;
 						rank="CAPTAIN";
 						name="s45";
-						description="Tripulante - Delta 1";
+						description="Tripulante - Delta1";
 						isPlayable=1;
 					};
 					id=411;
@@ -10843,8 +10844,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3335.6177,10.202641,1209.7821};
-						angles[]={6.268187,4.3454208,0.012496647};
+						position[]={3335.6179,10.202643,1209.7821};
+						angles[]={6.2681928,4.3454161,0.012496558};
 					};
 					side="West";
 					flags=2;
@@ -10853,7 +10854,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						name="s33";
-						description="Líder equipe Charlie";
+						description="Líder equipe  - Charlie";
 						isPlayable=1;
 					};
 					id=399;
@@ -10906,15 +10907,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3333.8521,10.298982,1202.7178};
-						angles[]={0.044970755,1.119895,6.2656851};
+						position[]={3333.8521,10.29897,1202.718};
+						angles[]={0.044977132,1.1198906,6.2656798};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s38";
-						description="Operador de Radio";
+						description="Operador de Radio - Charlie";
 						isPlayable=1;
 					};
 					id=404;
@@ -10967,15 +10968,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3333.1262,10.248847,1204.1388};
-						angles[]={0.032487731,1.119895,6.2656889};
+						position[]={3333.126,10.248842,1204.139};
+						angles[]={0.032480575,1.1198906,6.2656798};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s39";
-						description="Granadeiro";
+						description="Granadeiro - Charlie";
 						isPlayable=1;
 					};
 					id=405;
@@ -11028,15 +11029,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3332.4863,10.214806,1205.5308};
-						angles[]={0.032487731,1.119895,6.2656889};
+						position[]={3332.4861,10.214802,1205.531};
+						angles[]={0.032480575,1.1198906,6.2656798};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s40";
-						description="Granadeiro";
+						description="Granadeiro - Charlie";
 						isPlayable=1;
 					};
 					id=406;
@@ -11089,15 +11090,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3330.3845,10.155736,1209.84};
-						angles[]={6.270689,1.119895,0.0049914722};
+						position[]={3330.385,10.155741,1209.8401};
+						angles[]={6.2706885,1.1198906,0.0049916417};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s43";
-						description="Engenheiro";
+						description="Engenheiro - Charlie";
 						isPlayable=1;
 					};
 					id=409;
@@ -11150,15 +11151,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3329.8892,10.168361,1211.0481};
-						angles[]={6.270689,1.119895,0.0049914722};
+						position[]={3329.8889,10.16836,1211.0481};
+						angles[]={6.2706885,1.1198906,0.0049916417};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s44";
-						description="Médico de Campo";
+						description="Médico de Campo - Charlie";
 						isPlayable=1;
 					};
 					id=410;
@@ -11211,15 +11212,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3330.9995,10.134871,1208.6176};
-						angles[]={6.2506957,1.119895,0.024996169};
+						position[]={3331,10.134898,1208.618};
+						angles[]={6.2506871,1.1198906,0.024993116};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s42";
-						description="Fuzileiro Automático";
+						description="Fuzileiro Automático - Charlie";
 						isPlayable=1;
 					};
 					id=913;
@@ -11272,15 +11273,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3331.7139,10.16822,1207.006};
-						angles[]={0.032489564,1.119895,0.024996169};
+						position[]={3331.7141,10.168221,1207.0061};
+						angles[]={0.032498032,1.1198906,0.024993116};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s41";
-						description="Fuzileiro Automático";
+						description="Fuzileiro Automático - Charlie";
 						isPlayable=1;
 					};
 					id=914;
@@ -14314,8 +14315,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3335.5493,10.919487,1242.6782};
-						angles[]={6.255693,2.7452114,6.248199};
+						position[]={3335.5491,10.919493,1242.6781};
+						angles[]={6.2556963,2.7452109,6.2481914};
 					};
 					side="West";
 					flags=2;
@@ -14323,7 +14324,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="s46";
-						description="Piloto - Agui a 1";
+						description="Piloto - Águia1";
 						isPlayable=1;
 					};
 					id=509;
@@ -14376,15 +14377,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3335.1833,11.049105,1245.2561};
-						angles[]={6.2008719,2.7452114,6.2731848};
+						position[]={3335.1831,11.049108,1245.2561};
+						angles[]={6.2008753,2.7452109,6.2731848};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s37";
-						description="Tripulante - Aguia 1";
+						description="Tripulante - Águia1";
 						isPlayable=1;
 					};
 					id=400;
@@ -14437,15 +14438,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3334.0203,11.048752,1244.7113};
-						angles[]={6.2257481,2.7452114,6.248199};
+						position[]={3334.02,11.048746,1244.7111};
+						angles[]={6.2257466,2.7452109,6.2481914};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s36";
-						description="Tripulante - Aguia 1";
+						description="Tripulante - Águia1";
 						isPlayable=1;
 					};
 					id=401;
@@ -18384,8 +18385,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3332.0327,10.849279,1241.0481};
-						angles[]={6.2058401,2.7452114,0.014998405};
+						position[]={3332.033,10.849282,1241.0481};
+						angles[]={6.205832,2.7452109,0.014992379};
 					};
 					side="West";
 					flags=2;
@@ -18393,7 +18394,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="s47";
-						description="Piloto - Agui a 2";
+						description="Piloto - Águia2";
 						isPlayable=1;
 					};
 					id=510;
@@ -18446,15 +18447,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3330.0305,10.965382,1242.9337};
-						angles[]={6.2058401,2.7452114,0.014998405};
+						position[]={3330.031,10.965418,1242.9341};
+						angles[]={6.205832,2.7452109,0.014992379};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s35";
-						description="Tripulante - Aguia 2";
+						description="Tripulante - Águia2";
 						isPlayable=1;
 					};
 					id=402;
@@ -18507,15 +18508,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3331.7173,11.04226,1243.5992};
-						angles[]={6.2058401,2.7452114,0.014998405};
+						position[]={3331.717,11.042238,1243.599};
+						angles[]={6.205832,2.7452109,0.014992379};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s34";
-						description="Tripulante - Aguia 2";
+						description="Tripulante - Águia2";
 						isPlayable=1;
 					};
 					id=403;
@@ -18581,8 +18582,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3309.8789,9.9441233,1222.0304};
-						angles[]={6.2731848,4.260581,0.01749678};
+						position[]={3309.8789,9.9441204,1222.03};
+						angles[]={6.2731848,4.2605758,0.017488198};
 					};
 					side="West";
 					flags=2;
@@ -18591,7 +18592,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						name="s48";
-						description="Motorista - Delta 2";
+						description="Condutor - Delta2";
 						isPlayable=1;
 					};
 					id=906;
@@ -18644,15 +18645,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3306.3364,9.8347292,1221.0581};
-						angles[]={0.015002378,1.0350556,0.024996169};
+						position[]={3306.3359,9.8347168,1221.0581};
+						angles[]={0.015009832,1.03505,0.024993116};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s31";
-						description="Tripulante - Delta 2";
+						description="Tripulante - Delta2";
 						isPlayable=1;
 					};
 					id=396;
@@ -18705,15 +18706,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3307.179,9.8622465,1219.7034};
-						angles[]={6.2581892,1.0350556,0.024996169};
+						position[]={3307.179,9.862237,1219.703};
+						angles[]={6.2581921,1.03505,0.024993116};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s32";
-						description="Tripulante - Delta 2";
+						description="Tripulante - Delta2";
 						isPlayable=1;
 					};
 					id=397;
@@ -18779,8 +18780,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3320.9272,10.595332,1234.5834};
-						angles[]={6.2407117,4.3853307,0.01749678};
+						position[]={3320.927,10.595312,1234.583};
+						angles[]={6.2407041,4.3853316,0.017488198};
 					};
 					side="West";
 					flags=2;
@@ -18789,7 +18790,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						name="s49";
-						description="Líder equipe SpecOps 1";
+						description="Líder equipe  - Corsário";
 						isPlayable=1;
 					};
 					id=916;
@@ -18842,15 +18843,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3316.1638,10.444386,1235.3615};
-						angles[]={6.268187,1.1598052,0.019996032};
+						position[]={3316.1641,10.444386,1235.3611};
+						angles[]={6.2681928,1.1598063,0.020001473};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s50";
-						description="Granadeiro";
+						description="Granadeiro - Corsário";
 						isPlayable=1;
 					};
 					id=920;
@@ -18903,15 +18904,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3316.9092,10.436891,1233.8679};
-						angles[]={6.268187,1.1598052,0.019996032};
+						position[]={3316.9089,10.436888,1233.868};
+						angles[]={6.2681928,1.1598063,0.020001473};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s51";
-						description="Fuzileiro Automático";
+						description="Fuzileiro Automático - Corsário";
 						isPlayable=1;
 					};
 					id=922;
@@ -18964,15 +18965,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3317.3628,10.425568,1232.5082};
-						angles[]={6.268187,1.1598052,0.019996032};
+						position[]={3317.363,10.42557,1232.5081};
+						angles[]={6.2681928,1.1598063,0.020001473};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s53";
-						description="Operador de Radio";
+						description="Operador de Radio - Corsário";
 						isPlayable=1;
 					};
 					id=924;
@@ -19025,15 +19026,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3317.7856,10.423787,1231.6013};
-						angles[]={6.2756844,1.1598052,0.019996032};
+						position[]={3317.7859,10.42379,1231.6011};
+						angles[]={6.2756805,1.1598063,0.020001473};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s54";
-						description="Explosivista";
+						description="Explosivista - Corsário";
 						isPlayable=1;
 					};
 					id=926;
@@ -19086,15 +19087,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3318.1924,10.421354,1230.1924};
-						angles[]={6.2756844,1.1598052,0.019996032};
+						position[]={3318.1919,10.421342,1230.192};
+						angles[]={6.2756805,1.1598063,0.020001473};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s52";
-						description="Médico de Campo";
+						description="Médico de Campo - Corsário";
 						isPlayable=1;
 					};
 					id=930;
@@ -19160,8 +19161,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3323.5671,10.373679,1227.8112};
-						angles[]={0.014998405,4.3853307,6.2631893};
+						position[]={3323.5669,10.373687,1227.811};
+						angles[]={0.014992379,4.3853316,6.2631841};
 					};
 					side="West";
 					flags=2;
@@ -19170,7 +19171,7 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						name="s56";
-						description="Líder equipe SpecOps 2";
+						description="Líder equipe - Sparta";
 						isPlayable=1;
 					};
 					id=918;
@@ -19223,15 +19224,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3319.2693,10.42401,1228.5596};
-						angles[]={6.2457032,1.1598052,0.049959254};
+						position[]={3319.269,10.424016,1228.5601};
+						angles[]={6.2456956,1.1598063,0.049951322};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s55";
-						description="Granadeiro";
+						description="Granadeiro - Sparta";
 						isPlayable=1;
 					};
 					id=928;
@@ -19284,15 +19285,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3319.821,10.389634,1227.0977};
-						angles[]={6.2382159,1.1598052,0.049958061};
+						position[]={3319.821,10.38965,1227.098};
+						angles[]={6.2382083,1.1598063,0.049951322};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s57";
-						description="Fuzileiro Automático";
+						description="Fuzileiro Automático - Sparta";
 						isPlayable=1;
 					};
 					id=932;
@@ -19345,15 +19346,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3320.5664,10.354051,1225.6046};
-						angles[]={6.2382145,1.1598052,0.039979152};
+						position[]={3320.5659,10.354053,1225.6051};
+						angles[]={6.2382083,1.1598063,0.039985489};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s59";
-						description="Operador de Radio";
+						description="Operador de Radio - Sparta";
 						isPlayable=1;
 					};
 					id=933;
@@ -19406,15 +19407,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3321.02,10.311029,1224.2454};
-						angles[]={6.2382145,1.1598052,0.039979152};
+						position[]={3321.02,10.311013,1224.245};
+						angles[]={6.2382083,1.1598063,0.039985489};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s60";
-						description="Explosivista";
+						description="Explosivista - Sparta";
 						isPlayable=1;
 					};
 					id=934;
@@ -19467,15 +19468,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3321.4429,10.308479,1223.3385};
-						angles[]={6.2681832,1.1598052,0.039979152};
+						position[]={3321.4431,10.308483,1223.338};
+						angles[]={6.2681756,1.1598063,0.039985489};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						name="s61";
-						description="Médico de Campo";
+						description="Médico de Campo - Sparta";
 						isPlayable=1;
 					};
 					id=935;
@@ -19550,7 +19551,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="s62";
-						description="Operador de Morteiro - 1 Delta";
+						description="Operador de Morteiro - Echo";
 						isPlayable=1;
 					};
 					id=937;
@@ -19611,7 +19612,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="s63";
-						description="Operador de Morteiro - 2 Delta";
+						description="Operador de Morteiro - Echo";
 						isPlayable=1;
 					};
 					id=938;
@@ -19686,7 +19687,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="s65";
-						description="Operador de  UAV - 1 Echo";
+						description="Operador de  UAV - Foxtrot";
 						isPlayable=1;
 					};
 					id=940;
@@ -19747,7 +19748,7 @@ class Mission
 					{
 						skill=0.60000002;
 						name="s52_2";
-						description="Operador de  UAV - 2 Echo";
+						description="Operador de  UAV - Foxtrot";
 						isPlayable=1;
 					};
 					id=941;
@@ -22268,86 +22269,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3329.5671,11.992807,1184.8127};
-				angles[]={6.2506976,2.6067712,0.014998405};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="this setObjectTextureGlobal [0, ""UN_APCBase.paa""];    this setObjectTextureGlobal [1, ""UN_APCWheels.paa""];    this setObjectTextureGlobal [2, ""UN_APCTower.paa""];";
-				name="v1";
-			};
-			id=1098;
-			type="B_APC_Wheeled_01_cannon_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""arifle_MX_F"",""FirstAidKit""],[2,10]],[[""30Rnd_65x39_caseless_mag"",""100Rnd_65x39_caseless_mag"",""HandGrenade"",""MiniGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""Titan_AT"",""Titan_AP"",""Titan_AA""],[12,6,6,6,6,3,3,3,3,8,8,8,8,2,2,2]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item506
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3336.2795,12.307593,1188.925};
-				angles[]={6.1810422,2.6067712,0.029989703};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="this setObjectTextureGlobal [0, ""UN_APCBase.paa""];    this setObjectTextureGlobal [1, ""UN_APCWheels.paa""];    this setObjectTextureGlobal [2, ""UN_APCTower.paa""];";
-				name="v2";
-			};
-			id=1099;
-			type="B_APC_Wheeled_01_cannon_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""arifle_MX_F"",""FirstAidKit""],[2,10]],[[""30Rnd_65x39_caseless_mag"",""100Rnd_65x39_caseless_mag"",""HandGrenade"",""MiniGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""Titan_AT"",""Titan_AP"",""Titan_AA""],[12,6,6,6,6,3,3,3,3,8,8,8,8,2,2,2]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item507
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={3349.9963,12.706253,1196.0972};
 				angles[]={6.255693,2.6067712,0.019996032};
 			};
@@ -22383,7 +22304,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item508
+		class Item506
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22400,7 +22321,7 @@ class Mission
 			id=1101;
 			type="Land_CamoNetB_EAST";
 		};
-		class Item509
+		class Item507
 		{
 			dataType="Group";
 			side="West";
@@ -22500,7 +22421,7 @@ class Mission
 			};
 			id=1120;
 		};
-		class Item510
+		class Item508
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22540,7 +22461,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item511
+		class Item509
 		{
 			dataType="Group";
 			side="West";
@@ -22640,7 +22561,7 @@ class Mission
 			};
 			id=1125;
 		};
-		class Item512
+		class Item510
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22680,7 +22601,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item513
+		class Item511
 		{
 			dataType="Group";
 			side="West";
@@ -22780,7 +22701,7 @@ class Mission
 			};
 			id=1130;
 		};
-		class Item514
+		class Item512
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22796,6 +22717,84 @@ class Mission
 			};
 			id=1134;
 			type="B_APC_Wheeled_01_cannon_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_MX_F"",""FirstAidKit""],[2,10]],[[""30Rnd_65x39_caseless_mag"",""100Rnd_65x39_caseless_mag"",""HandGrenade"",""MiniGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""Titan_AT"",""Titan_AP"",""Titan_AA""],[12,6,6,6,6,3,3,3,3,8,8,8,8,2,2,2]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item513
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3329.5723,11.642517,1184.8243};
+				angles[]={6.2507048,2.6067712,0.014992379};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="v1";
+			};
+			id=1172;
+			type="LOP_UN_BTR70";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_MX_F"",""FirstAidKit""],[2,10]],[[""30Rnd_65x39_caseless_mag"",""100Rnd_65x39_caseless_mag"",""HandGrenade"",""MiniGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""Titan_AT"",""Titan_AP"",""Titan_AA""],[12,6,6,6,6,3,3,3,3,8,8,8,8,2,2,2]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item514
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3336.29,11.95898,1188.9608};
+				angles[]={6.1810489,2.6067712,0.029984757};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="v2";
+			};
+			id=1173;
+			type="LOP_UN_BTR70";
 			class CustomAttributes
 			{
 				class Attribute0
